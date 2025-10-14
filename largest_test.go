@@ -12,4 +12,11 @@ func TestLargestNormal(t *testing.T) {
 		t.Errorf("Expected 3 but got %v", actual)
 	}
 
+	actual = Largest(5, 6, 7)
+	expected = 7
+
+	if actual != expected {
+		t.Errorf("Expected 3 but got %v", actual)
+	}
+
 }
