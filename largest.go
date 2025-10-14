@@ -3,22 +3,15 @@ package main
 import "fmt"
 
 func Largest(a, b, c int) int {
-	if a > b {
-		if a > c {
-			return a
 
-		} else {
-			return c
-		}
-	} else {
-		if b > c {
-			return b
-		} else {
-			return c
-		}
+	if a > b && a > c {
+		return a
+	} else if b > a && b > c {
+		return b
 	}
+	return c
 }
 
 func main() {
-	fmt.Println(Largest(4, 8, 7))
+	fmt.Println(Largest(45, 88, 74))
 }
